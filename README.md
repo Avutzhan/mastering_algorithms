@@ -3,8 +3,8 @@
 1. One Pass Algorithms
    - [x] count nums
    - [x] sum of nums 
-   - [ ] product of nums
-   - [ ] find max
-   - [ ] find num
+   - [x] product of nums
+   - [x] find max
+   - [x] find num
 
 2. 
