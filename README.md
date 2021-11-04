@@ -7,4 +7,6 @@
    - [x] find max
    - [x] find num
 
-2. 
+2. Brute Force Method
+   - [x] is simple number
+   - [x] factorize_number
