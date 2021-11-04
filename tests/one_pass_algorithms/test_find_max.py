@@ -1,19 +1,22 @@
 import unittest
 from parameterized import parameterized
-from one_pass_algorithms.count_things import count_nums
+from one_pass_algorithms.find_max import maximum
 
 
-class TestCountNums(unittest.TestCase):
+class TestFindMax(unittest.TestCase):
     @parameterized.expand([
         ["five", [1, 2, 3, 4, 5], 5],
         ["six", [1, 2, 3, 4, 5, 6], 6],
         ["seven", [1, 2, 3, 4, 5, 6, 7], 7],
     ])
-    def test_count_nums(self, name, data, expected):
+    def test_maximum(self, name, data, expected):
         """
-        Test that it can count a list of integers with different size
+        Test that it can find max value of a list of integers
+        :param name: string
+        :param data: list[int]
+        :param expected: int
         """
-        result = count_nums(data)
+        result = maximum(data)
         self.assertEqual(result, expected)
 
 
