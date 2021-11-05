@@ -1,5 +1,7 @@
 from typing import List
 
+import void as void
+
 
 def is_simple_num(x: int) -> bool:
     """
@@ -45,3 +47,9 @@ def factorize_num(x: int) -> List[int]:
         else:
             divisor += 1
     return result
+
+
+def square_numbers(nums: List[int]) -> List[int]:
+    for i in range(len(nums)):
+        nums[i] = nums[i] * nums[i]
+    return nums

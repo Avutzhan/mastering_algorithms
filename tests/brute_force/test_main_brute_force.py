@@ -1,6 +1,6 @@
 import unittest
 from parameterized import parameterized
-from brute_force.main import is_simple_num, factorize_num
+from brute_force.main import is_simple_num, factorize_num, square_numbers
 
 
 class TestMainBruteForce(unittest.TestCase):
@@ -33,6 +33,19 @@ class TestMainBruteForce(unittest.TestCase):
         result = factorize_num(data)
         self.assertEqual(result, expected)
 
+    @parameterized.expand([
+        ["two", [2, 2], [4, 4]],
+        ["three", [3, 3, 3], [9, 9, 9]]
+    ])
+    def test_square_numbers(self, name, data, expected):
+        """
+        Test that it can square list of nums
+        :param name: string
+        :param data: List[int]
+        :param expected: List[int]
+        """
+        result = square_numbers(data)
+        self.assertEqual(result, expected)
 
 
 if __name__ == '__main__':
