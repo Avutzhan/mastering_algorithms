@@ -23,15 +23,16 @@ class TestMainBruteForce(unittest.TestCase):
         ["ninety", 19, [19]],
         ["twenty", 20, [2, 2, 5]]
     ])
-    def test_factorie_number(self, name, data, expected):
+    def test_factorize_number(self, name, data, expected):
         """
         Test that it can factorize number
         :param name: string
         :param data: int
-        :param expected: bool
+        :param expected: List[int]
         """
         result = factorize_num(data)
         self.assertEqual(result, expected)
+
 
 
 if __name__ == '__main__':
