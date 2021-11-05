@@ -1,6 +1,6 @@
 import unittest
 from parameterized import parameterized
-from brute_force.main import is_simple_num
+from brute_force.main import is_simple_num, factorize_num
 
 
 class TestMainBruteForce(unittest.TestCase):
@@ -16,6 +16,21 @@ class TestMainBruteForce(unittest.TestCase):
         :param expected: bool
         """
         result = is_simple_num(data)
+        self.assertEqual(result, expected)
+
+    @parameterized.expand([
+        ["four", 4, [2, 2]],
+        ["ninety", 19, [19]],
+        ["twenty", 20, [2, 2, 5]]
+    ])
+    def test_factorie_number(self, name, data, expected):
+        """
+        Test that it can factorize number
+        :param name: string
+        :param data: int
+        :param expected: bool
+        """
+        result = factorize_num(data)
         self.assertEqual(result, expected)
 
 

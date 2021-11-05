@@ -1,3 +1,6 @@
+from typing import List
+
+
 def is_simple_num(x: int) -> bool:
     """
     Просто́е число́ — натуральное число, имеющее ровно два различных натуральных делителя — единицу и самого себя.
@@ -23,3 +26,22 @@ def is_simple_num(x: int) -> bool:
         # например 4 с первой итерации получаем False потому что 4 % 2 = 0 делится без остатка
         divisor += 1
     return True
+
+
+def factorize_num(x: int) -> List[int]:
+    """
+    Раскладывает число на множители
+
+    Делим число на 2 пока она не станет меньше 1
+    :return: List[int]
+    """
+
+    result = []
+    divisor = 2
+    while x > 1:
+        if x % divisor == 0:
+            result.append(divisor)
+            x //= divisor
+        else:
+            divisor += 1
+    return result
