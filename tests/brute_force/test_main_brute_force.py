@@ -1,6 +1,6 @@
 import unittest
 from parameterized import parameterized
-from brute_force.main import is_simple_num, factorize_num, square_numbers
+from brute_force.main import is_simple_num, factorize_num, square_numbers, array_search
 
 
 class TestMainBruteForce(unittest.TestCase):
@@ -45,6 +45,23 @@ class TestMainBruteForce(unittest.TestCase):
         :param expected: List[int]
         """
         result = square_numbers(data)
+        self.assertEqual(result, expected)
+
+    @parameterized.expand([
+        ["not found", [1, 2, 3, 4, 5], 5, 8, -1],
+        ["found", [-1, -2, -3, -4, -5], 5, -3, 2],
+
+    ])
+    def test_array_search(self, name, arr, num, x, expected):
+        """
+        Test that it can search array
+        :param name: string
+        :param arr: list
+        :param num: int
+        :param x: int
+        :param expected: int
+        """
+        result = array_search(arr, num, x)
         self.assertEqual(result, expected)
 
 

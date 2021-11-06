@@ -9,4 +9,6 @@
 
 2. Brute Force Method
    - [x] is simple number
-   - [x] factorize_number
+   - [x] factorize number
+   - [x] square numbers
+   - [x] array search

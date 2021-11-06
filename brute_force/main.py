@@ -53,3 +53,22 @@ def square_numbers(nums: List[int]) -> List[int]:
     for i in range(len(nums)):
         nums[i] = nums[i] * nums[i]
     return nums
+
+
+def array_search(arr: list, num: int, x: int):
+    """
+    Осуществляет поиск числа х в массиве arr
+    от 0 до N-1 индекса вкюительно
+    Возвращает индекс элемента x в массиве A
+    или -1 если такого нет
+    Если в массиве несколько одинкавых элементов
+    равных х то вернуть индекс первого
+    :param arr:
+    :param num:
+    :param x:
+    :return:
+    """
+    for k in range(num):
+        if arr[k] == x:
+            return k
+    return -1
