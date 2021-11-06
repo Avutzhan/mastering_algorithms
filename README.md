@@ -12,3 +12,4 @@
    - [x] factorize number
    - [x] square numbers
    - [x] array search
+   - [x] array invert

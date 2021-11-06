@@ -1,6 +1,6 @@
 import unittest
+import brute_force.main
 from parameterized import parameterized
-from brute_force.main import is_simple_num, factorize_num, square_numbers, array_search
 
 
 class TestMainBruteForce(unittest.TestCase):
@@ -15,7 +15,7 @@ class TestMainBruteForce(unittest.TestCase):
         :param data: int
         :param expected: bool
         """
-        result = is_simple_num(data)
+        result = brute_force.main.is_simple_num(data)
         self.assertEqual(result, expected)
 
     @parameterized.expand([
@@ -30,7 +30,7 @@ class TestMainBruteForce(unittest.TestCase):
         :param data: int
         :param expected: List[int]
         """
-        result = factorize_num(data)
+        result = brute_force.main.factorize_num(data)
         self.assertEqual(result, expected)
 
     @parameterized.expand([
@@ -44,7 +44,7 @@ class TestMainBruteForce(unittest.TestCase):
         :param data: List[int]
         :param expected: List[int]
         """
-        result = square_numbers(data)
+        result = brute_force.main.square_numbers(data)
         self.assertEqual(result, expected)
 
     @parameterized.expand([
@@ -61,7 +61,23 @@ class TestMainBruteForce(unittest.TestCase):
         :param x: int
         :param expected: int
         """
-        result = array_search(arr, num, x)
+        result = brute_force.main.array_search(arr, num, x)
+        self.assertEqual(result, expected)
+
+    @parameterized.expand([
+        ["test 1", [1, 2, 3, 4, 5], 5, [5, 4, 3, 2, 1]],
+        ["test 2", [1, 2, 3, 4], 4, [4, 3, 2, 1]],
+
+    ])
+    def test_array_search(self, name, arr, num, expected):
+        """
+        Test that it can invert array
+        :param name: string
+        :param arr: list
+        :param num: int
+        :param expected: int
+        """
+        result = brute_force.main.array_invert(arr, num)
         self.assertEqual(result, expected)
 
 

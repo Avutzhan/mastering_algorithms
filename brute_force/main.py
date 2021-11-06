@@ -63,12 +63,25 @@ def array_search(arr: list, num: int, x: int):
     или -1 если такого нет
     Если в массиве несколько одинкавых элементов
     равных х то вернуть индекс первого
-    :param arr:
-    :param num:
-    :param x:
-    :return:
+    :param arr: list
+    :param num: iny
+    :param x: int
+    :return: k: int or -1
     """
     for k in range(num):
         if arr[k] == x:
             return k
     return -1
+
+
+def array_invert(arr: list, num: int):
+    """
+    Обращение массива (поворот задом-наперед)
+    в рамках индексов от 0 до N-1
+    :param arr: list
+    :param num: int
+    :return: arr: list
+    """
+    for k in range(num//2):
+        arr[k], arr[num-1-k] = arr[num-1-k], arr[k]
+    return arr
