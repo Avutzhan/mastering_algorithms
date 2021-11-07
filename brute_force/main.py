@@ -85,3 +85,11 @@ def array_invert(arr: list, num: int):
     for k in range(num//2):
         arr[k], arr[num-1-k] = arr[num-1-k], arr[k]
     return arr
+
+
+def move_array_left(arr: list, num: int) -> list:
+    tmp = arr[0]
+    for k in range(num - 1):
+        arr[k] = arr[k + 1]
+    arr[num - 1] = tmp
+    return arr

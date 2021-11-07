@@ -13,3 +13,4 @@
    - [x] square numbers
    - [x] array search
    - [x] array invert
+   - [x] move_array_left
