@@ -101,7 +101,7 @@ class TestMainBruteForce(unittest.TestCase):
         ["test 2", [1, 2, 3, 4], 4, [4, 1, 2, 3]],
 
     ])
-    def test_move_array_left(self, name, arr, num, expected):
+    def test_move_array_right(self, name, arr, num, expected):
         """
         Test that it can invert array
         :param name: string
@@ -110,6 +110,22 @@ class TestMainBruteForce(unittest.TestCase):
         :param expected: int
         """
         result = brute_force.main.move_array_right(arr, num)
+        self.assertEqual(result, expected)
+
+    @parameterized.expand([
+        ["test 1", 20, [2, 3, 5, 7, 11, 13, 17, 19]],
+        ["test 2", 4, [2, 3]],
+
+    ])
+    def test_sieve_of_eratosthenes(self, name, num, expected):
+        """
+        Test that it can invert array
+        :param name: string
+        :param arr: list
+        :param num: int
+        :param expected: int
+        """
+        result = brute_force.main.sieve_of_eratosthenes(num)
         self.assertEqual(result, expected)
 
 

@@ -82,8 +82,8 @@ def array_invert(arr: list, num: int):
     :param num: int
     :return: arr: list
     """
-    for k in range(num//2):
-        arr[k], arr[num-1-k] = arr[num-1-k], arr[k]
+    for k in range(num // 2):
+        arr[k], arr[num - 1 - k] = arr[num - 1 - k], arr[k]
     return arr
 
 
@@ -101,3 +101,19 @@ def move_array_right(arr: list, num: int) -> list:
         arr[k + 1] = arr[k]
     arr[0] = tmp
     return arr
+
+
+def sieve_of_eratosthenes(num: int):
+    result = []
+    arr = [True] * num
+    arr[0] = arr[1] = False
+    for k in range(2, num):
+        if arr[k]:
+            for m in range(2 * k, num, k):
+                arr[m] = False
+
+    for k in range(num):
+        print(k, '-', 'simple' if arr[k] else 'hard')
+        if arr[k]:
+            result.append(k)
+    return result

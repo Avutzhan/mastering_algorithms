@@ -15,3 +15,4 @@
    - [x] array invert
    - [x] move_array_left
    - [x] move_array_right
+   - [x] sieve_of_eratosthenes
