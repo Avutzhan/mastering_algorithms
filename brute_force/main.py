@@ -93,3 +93,11 @@ def move_array_left(arr: list, num: int) -> list:
         arr[k] = arr[k + 1]
     arr[num - 1] = tmp
     return arr
+
+
+def move_array_right(arr: list, num: int) -> list:
+    tmp = arr[num - 1]
+    for k in range(num - 2, -1, -1):
+        arr[k + 1] = arr[k]
+    arr[0] = tmp
+    return arr

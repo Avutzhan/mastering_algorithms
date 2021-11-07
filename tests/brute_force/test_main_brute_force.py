@@ -96,6 +96,22 @@ class TestMainBruteForce(unittest.TestCase):
         result = brute_force.main.move_array_left(arr, num)
         self.assertEqual(result, expected)
 
+    @parameterized.expand([
+        ["test 1", [1, 2, 3, 4, 5], 5, [5, 1, 2, 3, 4]],
+        ["test 2", [1, 2, 3, 4], 4, [4, 1, 2, 3]],
+
+    ])
+    def test_move_array_left(self, name, arr, num, expected):
+        """
+        Test that it can invert array
+        :param name: string
+        :param arr: list
+        :param num: int
+        :param expected: int
+        """
+        result = brute_force.main.move_array_right(arr, num)
+        self.assertEqual(result, expected)
+
 
 if __name__ == '__main__':
     unittest.main()
