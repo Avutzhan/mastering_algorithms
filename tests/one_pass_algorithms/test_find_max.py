@@ -1,6 +1,6 @@
 import unittest
 from parameterized import parameterized
-from one_pass_algorithms.find_max import maximum
+from one_pass_algorithms.find_max import maximum, minimum
 
 
 class TestFindMax(unittest.TestCase):
@@ -17,6 +17,21 @@ class TestFindMax(unittest.TestCase):
         :param expected: int
         """
         result = maximum(data)
+        self.assertEqual(result, expected)
+
+    @parameterized.expand([
+        ["test_1", [1, 2, 3, 4, 5], 1],
+        ["test_2", [2, 3, 4, 5, 6], 2],
+        ["test_3", [3, 4, 5, 6, 7], 3],
+    ])
+    def test_minimum(self, name, data, expected):
+        """
+        Test that it can find min value of a list of integers
+        :param name: string
+        :param data: list[int]
+        :param expected: int
+        """
+        result = minimum(data)
         self.assertEqual(result, expected)
 
 

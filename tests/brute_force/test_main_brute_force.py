@@ -75,7 +75,7 @@ class TestMainBruteForce(unittest.TestCase):
         :param name: string
         :param arr: list
         :param num: int
-        :param expected: int
+        :param expected: list
         """
         result = brute_force.main.array_invert(arr, num)
         self.assertEqual(result, expected)
@@ -87,11 +87,11 @@ class TestMainBruteForce(unittest.TestCase):
     ])
     def test_move_array_left(self, name, arr, num, expected):
         """
-        Test that it can invert array
+        Test that it can move array left
         :param name: string
         :param arr: list
         :param num: int
-        :param expected: int
+        :param expected: list
         """
         result = brute_force.main.move_array_left(arr, num)
         self.assertEqual(result, expected)
@@ -103,11 +103,11 @@ class TestMainBruteForce(unittest.TestCase):
     ])
     def test_move_array_right(self, name, arr, num, expected):
         """
-        Test that it can invert array
+        Test that it can move array right
         :param name: string
         :param arr: list
         :param num: int
-        :param expected: int
+        :param expected: list
         """
         result = brute_force.main.move_array_right(arr, num)
         self.assertEqual(result, expected)
@@ -119,11 +119,10 @@ class TestMainBruteForce(unittest.TestCase):
     ])
     def test_sieve_of_eratosthenes(self, name, num, expected):
         """
-        Test that it can invert array
+        Test that it can find simple numbers until num
         :param name: string
-        :param arr: list
         :param num: int
-        :param expected: int
+        :param expected: list
         """
         result = brute_force.main.sieve_of_eratosthenes(num)
         self.assertEqual(result, expected)

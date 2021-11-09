@@ -1,7 +1,5 @@
 from typing import List
 
-import void as void
-
 
 def is_simple_num(x: int) -> bool:
     """
@@ -113,7 +111,7 @@ def sieve_of_eratosthenes(num: int):
                 arr[m] = False
 
     for k in range(num):
-        print(k, '-', 'simple' if arr[k] else 'hard')
+        # print(k, '-', 'simple' if arr[k] else 'hard')
         if arr[k]:
             result.append(k)
     return result

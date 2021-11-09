@@ -5,6 +5,7 @@
    - [x] sum of nums 
    - [x] product of nums
    - [x] find max
+   - [x] find min
    - [x] find num
 
 2. Brute Force Method
@@ -16,3 +17,8 @@
    - [x] move_array_left
    - [x] move_array_right
    - [x] sieve_of_eratosthenes
+   
+3. Quadratic Sorting Algorithms
+   - [x] insert sort
+   - [x] select sort
+   - [x] bubble sort

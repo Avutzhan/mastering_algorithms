@@ -14,7 +14,8 @@ class TestFindNum(unittest.TestCase):
         Test that it can find max value of a list of integers
         :param name: string
         :param data: list[int]
-        :param expected: int
+        :param num: int
+        :param expected: bool
         """
         result = finder(data, num)
         self.assertEqual(result, expected)
