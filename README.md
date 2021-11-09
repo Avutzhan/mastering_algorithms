@@ -18,7 +18,10 @@
    - [x] move_array_right
    - [x] sieve_of_eratosthenes
    
-3. Quadratic Sorting Algorithms
+3. Sorting Algorithms
+   Quadratic
    - [x] insert sort
    - [x] select sort
    - [x] bubble sort
+   Linear
+   - [x] count sort

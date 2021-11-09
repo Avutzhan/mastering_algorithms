@@ -41,3 +41,6 @@ def bubble_sort(A):
             if A[k] > A[k+1]:
                 A[k], A[k+1] = A[k+1], A[k]
     return A
+
+# quadratic sorting algos
+# O(N) time and space O(M)

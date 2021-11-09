@@ -1,8 +1,9 @@
 import unittest
-import quad_sort.main
+import sort.quad_main
 from parameterized import parameterized
 
 
+# Test Quadratic Sorting Algorithms
 class TestQuadSort(unittest.TestCase):
     @parameterized.expand([
         ["test_1", [4, 2, 5, 1, 3], [1, 2, 3, 4, 5]],
@@ -15,7 +16,7 @@ class TestQuadSort(unittest.TestCase):
         :param data: list
         :param expected: list
         """
-        result = quad_sort.main.insert_sort(data)
+        result = sort.quad_main.insert_sort(data)
         self.assertEqual(result, expected)
 
     @parameterized.expand([
@@ -29,7 +30,7 @@ class TestQuadSort(unittest.TestCase):
         :param data: list
         :param expected: list
         """
-        result = quad_sort.main.selection_sort(data)
+        result = sort.quad_main.selection_sort(data)
         self.assertEqual(result, expected)
 
     @parameterized.expand([
@@ -43,8 +44,9 @@ class TestQuadSort(unittest.TestCase):
         :param data: list
         :param expected: list
         """
-        result = quad_sort.main.bubble_sort(data)
+        result = sort.quad_main.bubble_sort(data)
         self.assertEqual(result, expected)
+
 
 if __name__ == '__main__':
     unittest.main()
