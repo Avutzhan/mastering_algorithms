@@ -24,4 +24,4 @@
    - [x] select sort
    - [x] bubble sort
    Linear
-   - [x] count sort
+   - [x] count sort !one pass algo
