@@ -25,3 +25,6 @@
    - [x] bubble sort
    Linear
    - [x] count sort !one pass algo
+
+3. Recursive Algorithms
+   - [x] factorial
