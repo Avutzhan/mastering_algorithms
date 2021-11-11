@@ -47,3 +47,19 @@ def gcd_one_liner(a: int, b: int) -> int:
     """
 
     return a if b == 0 else gcd(b, a % b)
+
+
+def power(a: float, n: int) -> float:
+    if n == 0:
+        return 1
+    else:
+        return power(a, n - 1) * a
+
+
+def power_better(a: float, n: int) -> float:
+    if n == 0:
+        return 1
+    elif n % 2 == 1:  # не четное
+        return pow(a, n - 1) * a
+    else:  # n четное
+        return power_better(a ** 2, n // 2)

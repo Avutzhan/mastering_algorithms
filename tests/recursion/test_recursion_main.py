@@ -63,6 +63,36 @@ class TestRecursion(unittest.TestCase):
         result = recursion.main.gcd_one_liner(a, b)
         self.assertEqual(result, expected)
 
+    @parameterized.expand([
+        ["test_1", 2, 2, 4],
+        ["test_2", 3, 3, 27]
+    ])
+    def test_power(self, name, a, b, expected):
+        """
+        Test that it can power num
+        :param name: string
+        :param a: int
+        :param b: int
+        :param expected: int
+        """
+        result = recursion.main.power(a, b)
+        self.assertEqual(result, expected)
+
+    @parameterized.expand([
+        ["test_1", 2, 2, 4],
+        ["test_2", 3, 3, 27]
+    ])
+    def test_power_better(self, name, a, b, expected):
+        """
+        Test that it can power num
+        :param name: string
+        :param a: int
+        :param b: int
+        :param expected: int
+        """
+        result = recursion.main.power_better(a, b)
+        self.assertEqual(result, expected)
+
 
 if __name__ == '__main__':
     unittest.main()
