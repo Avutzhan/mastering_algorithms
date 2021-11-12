@@ -63,3 +63,31 @@ def power_better(a: float, n: int) -> float:
         return pow(a, n - 1) * a
     else:  # n четное
         return power_better(a ** 2, n // 2)
+
+
+summary: int = 0
+
+
+def hanoi(n: int, a: str, b: str, c: str) -> int:
+    global summary
+    """
+    Hanoi Tower Game
+    Узнать сколько шагов нужно для решения головоломки с n дисками
+    Rules
+    * Мы можем перемещать только один диск в любой момент времени
+    * Только диск, который находится наверху, может быть перемещен и помещен сверху на любой другой стержень
+    * Диск может быть помещен только поверх большего диска
+
+    # Определить функцию с именем Hanoi Tower, сделать три столбца a, b, c, всего n дисков
+    :param n: int
+    :param a: str
+    :param b: str
+    :param c: str
+    :return: int
+    """
+
+    if n > 0:
+        hanoi(n - 1, a, b, c)  # n-1 диски перемещаются от a до b к c
+        summary += 1
+        hanoi(n - 1, c, a, b)  # n-1 диски перемещаются с c через a на b
+    return summary

@@ -1,19 +1,20 @@
 # Algorithms realizations by Categories
 
 1. One Pass Algorithms
-   - [x] count nums
-   - [x] sum of nums 
-   - [x] product of nums
-   - [x] find max
-   - [x] find min
-   - [x] find num
+   - [x] count_nums
+   - [x] simple_sum 
+   - [x] simple_sum_short
+   - [x] product
+   - [x] maximum
+   - [x] minimum
+   - [x] finder
 
 2. Brute Force Method
-   - [x] is simple number
-   - [x] factorize number
-   - [x] square numbers
-   - [x] array search
-   - [x] array invert
+   - [x] is_simple_num
+   - [x] factorize_num
+   - [x] square_numbers
+   - [x] array_search
+   - [x] array_invert
    - [x] move_array_left
    - [x] move_array_right
    - [x] sieve_of_eratosthenes
@@ -28,3 +29,9 @@
 
 3. Recursive Algorithms
    - [x] factorial
+   - [x] gcd
+   - [x] gcd_better
+   - [x] gcd_one_liner
+   - [x] power
+   - [x] power_better
+   - [x] hanoi

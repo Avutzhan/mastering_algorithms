@@ -93,6 +93,17 @@ class TestRecursion(unittest.TestCase):
         result = recursion.main.power_better(a, b)
         self.assertEqual(result, expected)
 
+    @parameterized.expand([
+        ["test_1", 3, "A", "B", "C", 7],
+        ["test_1", 4, "A", "B", "C", 22]
+    ])
+    def test_hanoi(self, name, n, a, b, c, expected):
+        """
+
+        """
+        result = recursion.main.hanoi(n, a, b, c)
+        self.assertEqual(result, expected)
+
 
 if __name__ == '__main__':
     unittest.main()
