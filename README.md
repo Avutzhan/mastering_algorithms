@@ -34,4 +34,4 @@
    - [x] gcd_one_liner
    - [x] power
    - [x] power_better
-   - [x] hanoi
+   - [x] hanoi [description](https://pythobyte.com/tower-of-hanoi-python-01725/)
