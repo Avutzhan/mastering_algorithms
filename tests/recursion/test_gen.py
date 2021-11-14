@@ -40,6 +40,25 @@ class TestGen(unittest.TestCase):
         result = gen.gen_bin_iterative(n)
         self.assertEqual(result, expected)
 
+    @parameterized.expand([
+        ["test_1", 3, 3, [[0, 0, 0], [0, 0, 1], [0, 0, 2], [0, 1, 0], [0, 1, 1], [0, 1, 2], [0, 2, 0], [0, 2, 1],
+                       [0, 2, 2], [1, 0, 0], [1, 0, 1], [1, 0, 2], [1, 1, 0], [1, 1, 1], [1, 1, 2], [1, 2, 0],
+                       [1, 2, 1], [1, 2, 2], [2, 0, 0], [2, 0, 1], [2, 0, 2], [2, 1, 0], [2, 1, 1], [2, 1, 2],
+                       [2, 2, 0], [2, 2, 1], [2, 2, 2]]]
+    ])
+    def test_generate_numbers(self, name, n, m, expected):
+        """
+        Test that it can generate numbers
+        :param name: str
+        :param n: int
+        :param m: int
+        :param expected: list
+        """
+        gen = recursion.gen.Gen()
+        gen.clear_data()
+        result = gen.generate_numbers(n, m)
+        self.assertEqual(result, expected)
+
 
 if __name__ == '__main__':
     unittest.main()

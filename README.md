@@ -41,4 +41,5 @@
    - [x] generate_permutations
      - [x] gen_bin_recursive
      - [x] gen_bin_iterative
+     - [x] generate_numbers
    
