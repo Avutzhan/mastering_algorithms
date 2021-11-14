@@ -99,7 +99,12 @@ class TestRecursion(unittest.TestCase):
     ])
     def test_hanoi(self, name, n, a, b, c, expected):
         """
-
+        Test that it can count steps
+        :param n: int
+        :param a: str
+        :param b: str
+        :param c: str
+        :param expected: int
         """
         result = recursion.main.hanoi(n, a, b, c)
         self.assertEqual(result, expected)

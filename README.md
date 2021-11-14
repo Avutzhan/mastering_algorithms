@@ -26,6 +26,9 @@
    - [x] bubble sort
    Linear
    - [x] count sort !one pass algo
+   Linearithmic
+   - [x] quick_sort tony hoar sorting TO DO
+   - [x] merge_sort TO DO
 
 3. Recursive Algorithms
    - [x] factorial
@@ -35,3 +38,7 @@
    - [x] power
    - [x] power_better
    - [x] hanoi [description](https://pythobyte.com/tower-of-hanoi-python-01725/)
+   - [x] generate_permutations
+     - [x] gen_bin_recursive
+     - [x] gen_bin_iterative
+   
