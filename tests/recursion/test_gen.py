@@ -59,6 +59,21 @@ class TestGen(unittest.TestCase):
         result = gen.generate_numbers(n, m)
         self.assertEqual(result, expected)
 
+    @parameterized.expand([
+        ["test_1", 3, [[1, 2, 3], [1, 3, 2], [2, 1, 3], [2, 3, 1], [3, 1, 2], [3, 2, 1]]]
+    ])
+    def test_generate_permutations(self, name, n, expected):
+        """
+        Test that it can generate numbers
+        :param name: str
+        :param n: int
+        :param expected: list
+        """
+        gen = recursion.gen.Gen()
+        gen.clear_data()
+        result = gen.generate_permutations(n)
+        self.assertEqual(result, expected)
+
 
 if __name__ == '__main__':
     unittest.main()
