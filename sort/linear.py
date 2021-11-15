@@ -27,3 +27,15 @@ def counting_sort(array: list) -> list:
 
     return array
 
+
+# проверка отсортированности массива по возрастанию и убыванию за O(len(A))
+# int(True) = 1 must be +1 with s
+# int(False) = 1 must be -1 with s
+def check_sorted(A, ascending=True):
+    flag = True
+    s = 2 * int(ascending) - 1
+    for i in range(0, len(A) - 1):
+        if s * A[i] > s * A[i + 1]:
+            flag = False
+            break
+    return flag

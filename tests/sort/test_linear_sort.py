@@ -19,6 +19,21 @@ class TestLinearSort(unittest.TestCase):
         result = sort.linear.counting_sort(data)
         self.assertEqual(result, expected)
 
+    @parameterized.expand([
+        ["test_1", [1, 2, 3, 4, 5], True, True],
+        ["test_2", [4, 3, 2, 1], False, True]
+    ])
+    def test_check_sorted(self, name, data, flag, expected):
+        """
+        Test that it can check sorted
+        :param name: string
+        :param data: list
+        :param flag: bool
+        :param expected: bool
+        """
+        result = sort.linear.check_sorted(data, flag)
+        self.assertEqual(result, expected)
+
 
 if __name__ == '__main__':
     unittest.main()

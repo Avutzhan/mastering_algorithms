@@ -26,6 +26,7 @@
    - [x] bubble sort
    Linear
    - [x] count sort !one pass algo
+   - [x] check_sorted
    Linearithmic
    - [x] quick_sort tony hoar sorting
    - [x] merge_sort
