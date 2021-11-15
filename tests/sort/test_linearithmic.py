@@ -34,6 +34,20 @@ class TestLinearithmicSort(unittest.TestCase):
         sort.linearithmic.merge_sort(a)
         self.assertEqual(a, expected)
 
+    @parameterized.expand([
+        ["test_1", [3, 4, 1, 2], [1, 2, 3, 4]],
+        ["test_2", [4, 5, 6, 1, 2, 3], [1, 2, 3, 4, 5, 6]]
+    ])
+    def test_quick_sort(self, name, a, expected):
+        """
+        Test that it can sort array
+        :param name: string
+        :param a: list
+        :param expected: list
+        """
+        sort.linearithmic.quick_sort(a)
+        self.assertEqual(a, expected)
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -27,7 +27,7 @@
    Linear
    - [x] count sort !one pass algo
    Linearithmic
-   - [x] quick_sort tony hoar sorting TO DO
+   - [x] quick_sort tony hoar sorting
    - [x] merge_sort
      - [x] merge
 

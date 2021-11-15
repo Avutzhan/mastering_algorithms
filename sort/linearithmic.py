@@ -43,3 +43,30 @@ def merge_sort(A):
     for i in range(len(A)):
         A[i] = C[i]
         # перелили один массив в другой
+
+
+# Toni Hoar Sort == quick_sort
+def quick_sort(A):
+    if len(A) <= 1:
+        return
+    barrier = A[0]
+    L = []
+    M = []
+    R = []
+    # L = M = R = [] список является обьектом из за ссылочной модели тут три переменных указывают на один обьект списка
+    for x in A:
+        if x < barrier:
+            L.append(x)
+        elif x == barrier:
+            M.append(x)
+        else:
+            R.append(x)
+    quick_sort(L)
+    quick_sort(R)
+    k = 0
+    for x in L + M + R:
+        A[k] = x
+        k += 1
+
+
+
