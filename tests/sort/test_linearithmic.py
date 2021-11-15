@@ -20,6 +20,20 @@ class TestLinearithmicSort(unittest.TestCase):
         result = sort.linearithmic.merge(a, b)
         self.assertEqual(result, expected)
 
+    @parameterized.expand([
+        ["test_1", [3, 4, 1, 2], [1, 2, 3, 4]],
+        ["test_2", [4, 5, 6, 1, 2, 3], [1, 2, 3, 4, 5, 6]]
+    ])
+    def test_merge_sort(self, name, a, expected):
+        """
+        Test that it can sort array
+        :param name: string
+        :param a: list
+        :param expected: list
+        """
+        sort.linearithmic.merge_sort(a)
+        self.assertEqual(a, expected)
+
 
 if __name__ == '__main__':
     unittest.main()
