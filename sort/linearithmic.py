@@ -4,7 +4,7 @@ def merge(A: list, B: list) -> list:
     i = k = n = 0
     while i < len(A) and k < len(B):
         if A[i] <= B[k]:
-            C[k] = A[i]
+            C[n] = A[i]
             i += 1
             n += 1
         else:

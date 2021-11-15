@@ -28,7 +28,8 @@
    - [x] count sort !one pass algo
    Linearithmic
    - [x] quick_sort tony hoar sorting TO DO
-   - [x] merge_sort TO DO
+   - [x] merge_sort
+     - [x] merge
 
 3. Recursive Algorithms
    - [x] factorial
@@ -43,3 +44,4 @@
      - [x] gen_bin_iterative
      - [x] generate_numbers
    
+лекция 9
