@@ -32,7 +32,7 @@
    - [x] merge_sort
      - [x] merge
 
-3. Recursive Algorithms
+4. Recursive Algorithms
    - [x] factorial
    - [x] gcd
    - [x] gcd_better
@@ -44,5 +44,8 @@
      - [x] gen_bin_recursive
      - [x] gen_bin_iterative
      - [x] generate_numbers
+     
+5. Search Algorithms 
+   - [x] binary_search
    
-лекция 9
+лекция 10
