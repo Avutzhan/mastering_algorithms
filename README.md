@@ -51,5 +51,8 @@
 5. Dynamic Programming
    - [x] Fibonacci
      - [x] dynamic_fib
-   
+   - [x] cricket jumps problem
+     - [x] trajectories_num
+     - [x] count_trajectories
+     - [x] count_min_cost
 лекция 10
