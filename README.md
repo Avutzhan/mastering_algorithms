@@ -47,5 +47,9 @@
      
 5. Search Algorithms 
    - [x] binary_search
+
+5. Dynamic Programming
+   - [x] Fibonacci
+     - [x] dynamic_fib
    
 лекция 10
