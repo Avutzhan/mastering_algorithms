@@ -48,15 +48,20 @@
 5. Search Algorithms 
    - [x] binary_search
 
-5. Dynamic Programming
+6. Dynamic Programming
    - [x] Fibonacci
      - [x] dynamic_fib
-   - [x] cricket jumps problem
+   - [x] cricket jumps problem like fibonacci
      - [x] trajectories_num
      - [x] count_trajectories
      - [x] count_min_cost
-   - [x] Линеаризация массива Aij <-> A[i*M+j] N строк M элементов в строке
-   - [x] 1 Список списков A = [[0]*M]*N так создавать нельзя двумерный массив
-   - [x] 2 Список списков Best Practice A = [[0]*M for i in range(N)] 
-   - [x] A[0] == A[1] в 1 и 2 случает true но есть оператор сравнения ссылок является ли одно другим A[0] is A[1] в 1 случае выведет да во 2 случае выведет нет так как по сути это разные объекты 1 вариант ошибочный
-лекция 10
+     - [x] linearize_array
+     - [x] list of lists
+     
+   ::TO DO - [x] Вычисляем шаги короля использует треугольник паскаля в решении
+     ::TO DO - [x] 252 шага потребуется для рекурсии и 36 шагод для динамического программирования
+   ::TO DO - [x] наибольшая общая подпоследовательность
+   ::TO DO - [x] наибольшая возрастающая подпоследовательность
+   
+   
+лекция 12
