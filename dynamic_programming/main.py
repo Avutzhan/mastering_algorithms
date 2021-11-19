@@ -26,7 +26,7 @@ def dynamic_fib(n):
         fb[i] = fb[i - 1] + fb[i - 2]
     return fb[n]  # last i is result you can return fb[-1]
 
-# lecture 10 review comment and fix
+
 def trajectories_num(n: int) -> int:
     """
     find trajectories of cricket that can jump with rules
@@ -35,12 +35,12 @@ def trajectories_num(n: int) -> int:
     :param n: int
     :return: int
     """
-    k = [0, 1] + [0] * n
+    k = [0, 1] + [0] * (n - 1)
     for i in range(2, n + 1):
         k[i] = k[i - 2] + k[i - 1]
     return k[n]
 
-# lecture 10 review comment and fix
+
 def count_trajectories(n: int, allowed: List[bool]) -> int:
     """
     find trajectories of cricket that can jump with rules

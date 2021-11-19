@@ -37,7 +37,7 @@ class TestDynamic(unittest.TestCase):
         ["test_1", 4, 3],
         ["test_2", 5, 5]
     ])
-    def test_jump_num(self, name, n, expected):
+    def test_trajectories_num(self, name, n, expected):
         """
         Test that it can find jump nums
         :param name: string
