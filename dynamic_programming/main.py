@@ -117,6 +117,33 @@ def best_list_of_lists(M: list, N: list):
     return A
 
 
+def king_steps(N: int, M: int) -> int:
+    """
+    Количество маршрутов
+    Пусть за один ход королю разрешается передвинуться на одну клетку вниз или вправо. Необходимо определить,
+    сколько существует различных маршрутов, ведущих из левого верхнего в правый нижний угол.
+    W(a, b) = W(a, b - 1) + W(a - 1, b).
+    252 шага потребуется для рекурсии и 36 шагод для динамического программирования
+    использует треугольник паскаля в решении посмотри на весь массив в конце работы
+    :param N:
+    :param M:
+    :return:
+    """
+    # create lis of lists
+    K = [[0] * (M + 1) for i in range(N + 1)]
+    # initialize values, prepare to work
+    for i in range(0, M + 1):
+        K[0][i] = 1
+    for j in range(0, N + 1):
+        K[j][0] = 1
+    # work
+    for i in range(1, N + 1):
+        for j in range(1, M + 1):
+            K[i][j] = K[i][j - 1] + K[i - 1][j]
+
+    return K[N][M]
+
+
 def longest_common_subsequence(A, B):
     F = [[0] * (len(B) + 1) for i in range(len(A) + 1)]
     for i in range(1, len(A) + 1):

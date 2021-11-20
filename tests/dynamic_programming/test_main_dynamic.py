@@ -153,6 +153,21 @@ class TestDynamic(unittest.TestCase):
         result = A[0] is A[1]
         self.assertEqual(result, expected)
 
+    @parameterized.expand([
+        ["test_1", 5, 5, 252],
+        ["test_2", 8, 8, 12870]
+    ])
+    def test_king_steps(self, name, N, M, expected):
+        """
+        Test that it can count king steps
+        :param name: string
+        :param N: int
+        :param M: int
+        :param expected: int
+        """
+        result = dynamic_programming.main.king_steps(N, M)
+        self.assertEqual(result, expected)
+
 
 if __name__ == '__main__':
     unittest.main()
