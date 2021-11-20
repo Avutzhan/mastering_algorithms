@@ -58,6 +58,7 @@
      - [x] linearize_array
      - [x] list of lists
      - [x] king_steps
+     - [x] longest_common_subsequence
      
    ::TO DO - [x] наибольшая общая подпоследовательность
    ::TO DO - [x] наибольшая возрастающая подпоследовательность

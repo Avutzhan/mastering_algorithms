@@ -144,7 +144,13 @@ def king_steps(N: int, M: int) -> int:
     return K[N][M]
 
 
-def longest_common_subsequence(A, B):
+def longest_common_subsequence(A: list, B: list) -> int:
+    """
+    Наибольшая общая подпоследовательность
+    :param A: list
+    :param B: list
+    :return: int
+    """
     F = [[0] * (len(B) + 1) for i in range(len(A) + 1)]
     for i in range(1, len(A) + 1):
         for j in range(1, len(B) + 1):
