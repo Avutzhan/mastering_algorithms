@@ -183,6 +183,20 @@ class TestDynamic(unittest.TestCase):
         result = dynamic_programming.main.longest_common_subsequence(N, M)
         self.assertEqual(result, expected)
 
+    @parameterized.expand([
+        ["test_1", [0, 8, 4, 12, 2, 10, 6, 14, 1, 9, 5, 13, 3, 11, 7, 15], 6],
+        ["test_2", [1, 3, 4, 4, 4, 4], 3]
+    ])
+    def test_longest_increasing_subsequence(self, name, A, expected):
+        """
+        Test that it can count longest increasing subsequence
+        :param name: string
+        :param A: list
+        :param expected: int
+        """
+        result = dynamic_programming.main.longest_increasing_subsequence(A)
+        self.assertEqual(result, expected)
+
 
 if __name__ == '__main__':
     unittest.main()

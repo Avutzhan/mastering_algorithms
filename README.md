@@ -59,9 +59,6 @@
      - [x] list of lists
      - [x] king_steps
      - [x] longest_common_subsequence
+     - [x] longest_increasing_subsequence
      
-   ::TO DO - [x] наибольшая общая подпоследовательность
-   ::TO DO - [x] наибольшая возрастающая подпоследовательность
-   
-   
 лекция 12

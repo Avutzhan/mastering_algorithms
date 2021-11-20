@@ -161,12 +161,18 @@ def longest_common_subsequence(A: list, B: list) -> int:
     return F[-1][-1]
 
 
-def longest_increasing_subsequence(A, B):
-    F = [0] * (len(A) + 1)
-    for i in range(1, len(A) + 1):
-        maximum = 0
-        for j in range(1, i):
-            if A[i] > A[j] and F[j] > maximum:
-                maximum = F[j]
-        F[i] = maximum + 1
-    return F[len(A)]
+def longest_increasing_subsequence(A: list) -> int:
+    """
+    Наибольшая возрастающая подпоследовательность
+    :param A: list
+    :return: int
+    """
+    F = [0] * (len(A))
+    F[0] = 1
+    for i in range(1, len(A)):
+        m = 0
+        for j in range(0, i):
+            if A[i] > A[j] and F[j] > m:
+                m = F[j]
+        F[i] = m + 1
+    return F[-1]
