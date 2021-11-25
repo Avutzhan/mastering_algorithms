@@ -199,3 +199,12 @@ def levenshtein(A: str, B: str) -> int:
             else:
                 F[i][j] = 1 + min(F[i - 1][j], F[i][j - 1], F[i - 1][j - 1])
     return F[len(A)][len(B)]
+
+
+def check_strings(A: str, B: str) -> bool:
+    if len(A) != len(B):
+        return False
+    for i in range(len(A)):
+        if A[i] != B[i]:
+            return False
+    return True

@@ -58,5 +58,6 @@
         - [x] longest_common_subsequence
         - [x] longest_increasing_subsequence
         - [x] levenshtein
+        - [x] check str equality
 
 лекция 12

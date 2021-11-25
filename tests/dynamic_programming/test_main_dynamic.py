@@ -212,6 +212,21 @@ class TestDynamic(unittest.TestCase):
         result = dynamic_programming.main.levenshtein(A, B)
         self.assertEqual(result, expected)
 
+    @parameterized.expand([
+        ["test_1", "колокол", "молоко", False],
+        ["test_2", "world", "world", True]
+    ])
+    def test_check_strings(self, name, A, B, expected):
+        """
+        Test that it can check strings
+        :param name: string
+        :param A: str
+        :param B: str
+        :param expected: bool
+        """
+        result = dynamic_programming.main.check_strings(A, B)
+        self.assertEqual(result, expected)
+
 
 if __name__ == '__main__':
     unittest.main()
