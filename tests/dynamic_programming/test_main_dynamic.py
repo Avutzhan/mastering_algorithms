@@ -197,6 +197,21 @@ class TestDynamic(unittest.TestCase):
         result = dynamic_programming.main.longest_increasing_subsequence(A)
         self.assertEqual(result, expected)
 
+    @parameterized.expand([
+        ["test_1", "колокол", "молоко", 2],
+        ["test_2", "hello world", "bye world!", 6]
+    ])
+    def test_levenshtein(self, name, A, B, expected):
+        """
+        Test that it can find out levenshtein distance
+        :param name: string
+        :param A: str
+        :param B: str
+        :param expected: int
+        """
+        result = dynamic_programming.main.levenshtein(A, B)
+        self.assertEqual(result, expected)
+
 
 if __name__ == '__main__':
     unittest.main()
