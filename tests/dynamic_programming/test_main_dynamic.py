@@ -227,6 +227,50 @@ class TestDynamic(unittest.TestCase):
         result = dynamic_programming.main.check_strings(A, B)
         self.assertEqual(result, expected)
 
+    @parameterized.expand([
+        ["test_1", "bbbaaaab", "ab", 6],
+        ["test_2", "el-world", "world", 3]
+    ])
+    def test_search_substring(self, name, s, sub, expected):
+        """
+        Test that it can find substring in string
+        :param name: str
+        :param s: str
+        :param sub: str
+        :param expected: int
+        """
+        result = dynamic_programming.main.search_substring(s, sub)
+        self.assertEqual(result, expected)
+
+    @parameterized.expand([
+        ["test_1", "abcabcd", [0, 0, 0, 1, 2, 3, 0]],
+        ["test_2", "abacaba", [0, 0, 1, 0, 1, 2, 3]]
+    ])
+    def test_prefix_function(self, name, s, expected):
+        """
+        Test that it can find prefix function
+        :param name: str
+        :param s: str
+        :param expected: list
+        """
+        result = dynamic_programming.main.prefix(s)
+        self.assertEqual(result, expected)
+
+    @parameterized.expand([
+        ["test_1", "bbbaaaab", "ab", 6],
+        ["test_2", "el-world", "world", 3]
+    ])
+    def test_kmp(self, name, s, sub, expected):
+        """
+        Test that it can find substring in string
+        :param name: str
+        :param s: str
+        :param sub: str
+        :param expected: list
+        """
+        result = dynamic_programming.main.kmp(sub, s)
+        self.assertEqual(result, expected)
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -202,9 +202,58 @@ def levenshtein(A: str, B: str) -> int:
 
 
 def check_strings(A: str, B: str) -> bool:
+    """
+    O(n) реализация A == B но наша легче и быстрее а A == B имеет свою цену
+    :param A: str
+    :param B: str
+    :return:
+    """
     if len(A) != len(B):
         return False
     for i in range(len(A)):
         if A[i] != B[i]:
             return False
     return True
+
+
+def search_substring(s: str, sub: str) -> int:
+    """
+    O(n * m) Наивный поиск подстроки
+    :param s: str
+    :param sub: str
+    :return: int
+    """
+    for i in range(0, len(s) - len(sub) + 1):
+        if check_strings(s[i:i + len(sub)], sub):
+            return i
+
+
+def prefix(s):
+    p = [0] * len(s)
+    for i in range(1, len(s)):
+        k = p[i - 1]
+        while k > 0 and s[i] != s[k]:
+            k = p[k - 1]
+        if s[i] == s[k]:
+            k += 1
+        p[i] = k
+    return p
+
+
+def kmp(s, t):
+    """
+    O(n + m) Алгоритм Кнута Морриса Пратта
+
+    """
+    index = -1
+    f = prefix(s)
+    k = 0
+    for i in range(len(t)):
+        while k > 0 and s[k] != t[i]:
+            k = f[k - 1]
+        if s[k] == t[i]:
+            k = k + 1
+        if k == len(s):
+            index = i - len(s) + 1
+            break
+    return index

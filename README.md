@@ -59,5 +59,8 @@
         - [x] longest_increasing_subsequence
         - [x] levenshtein
         - [x] check str equality
-
+        - [x] search substring in string
+        - [x] prefix
+        - [x] kmp
+        
 лекция 12
