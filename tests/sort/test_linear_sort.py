@@ -1,5 +1,4 @@
 import unittest
-import sort.linear
 from parameterized import parameterized
 
 
@@ -16,7 +15,7 @@ class TestLinearSort(unittest.TestCase):
         :param data: list
         :param expected: list
         """
-        result = sort.linear.counting_sort(data)
+        result = algos.sort.linear.counting_sort(data)
         self.assertEqual(result, expected)
 
     @parameterized.expand([
@@ -31,7 +30,7 @@ class TestLinearSort(unittest.TestCase):
         :param flag: bool
         :param expected: bool
         """
-        result = sort.linear.check_sorted(data, flag)
+        result = algos.sort.linear.check_sorted(data, flag)
         self.assertEqual(result, expected)
 
 

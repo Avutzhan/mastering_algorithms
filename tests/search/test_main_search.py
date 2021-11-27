@@ -1,5 +1,5 @@
 import unittest
-import search.main
+import algos.search.main
 from parameterized import parameterized
 
 
@@ -17,7 +17,7 @@ class TestSearch(unittest.TestCase):
         :param x: int
         :param expected: int
         """
-        result = search.main.binary_search(arr, x)
+        result = algos.search.main.binary_search(arr, x)
         self.assertEqual(result, expected)
 
 

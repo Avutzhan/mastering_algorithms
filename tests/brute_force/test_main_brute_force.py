@@ -1,5 +1,5 @@
 import unittest
-import brute_force.main
+import algos.brute_force.main
 from parameterized import parameterized
 
 
@@ -15,7 +15,7 @@ class TestMainBruteForce(unittest.TestCase):
         :param data: int
         :param expected: bool
         """
-        result = brute_force.main.is_simple_num(data)
+        result = algos.brute_force.main.is_simple_num(data)
         self.assertEqual(result, expected)
 
     @parameterized.expand([
@@ -30,7 +30,7 @@ class TestMainBruteForce(unittest.TestCase):
         :param data: int
         :param expected: List[int]
         """
-        result = brute_force.main.factorize_num(data)
+        result = algos.brute_force.main.factorize_num(data)
         self.assertEqual(result, expected)
 
     @parameterized.expand([
@@ -44,7 +44,7 @@ class TestMainBruteForce(unittest.TestCase):
         :param data: List[int]
         :param expected: List[int]
         """
-        result = brute_force.main.square_numbers(data)
+        result = algos.brute_force.main.square_numbers(data)
         self.assertEqual(result, expected)
 
     @parameterized.expand([
@@ -61,7 +61,7 @@ class TestMainBruteForce(unittest.TestCase):
         :param x: int
         :param expected: int
         """
-        result = brute_force.main.array_search(arr, num, x)
+        result = algos.brute_force.main.array_search(arr, num, x)
         self.assertEqual(result, expected)
 
     @parameterized.expand([
@@ -77,7 +77,7 @@ class TestMainBruteForce(unittest.TestCase):
         :param num: int
         :param expected: list
         """
-        result = brute_force.main.array_invert(arr, num)
+        result = algos.brute_force.main.array_invert(arr, num)
         self.assertEqual(result, expected)
 
     @parameterized.expand([
@@ -93,7 +93,7 @@ class TestMainBruteForce(unittest.TestCase):
         :param num: int
         :param expected: list
         """
-        result = brute_force.main.move_array_left(arr, num)
+        result = algos.brute_force.main.move_array_left(arr, num)
         self.assertEqual(result, expected)
 
     @parameterized.expand([
@@ -109,7 +109,7 @@ class TestMainBruteForce(unittest.TestCase):
         :param num: int
         :param expected: list
         """
-        result = brute_force.main.move_array_right(arr, num)
+        result = algos.brute_force.main.move_array_right(arr, num)
         self.assertEqual(result, expected)
 
     @parameterized.expand([
@@ -124,7 +124,7 @@ class TestMainBruteForce(unittest.TestCase):
         :param num: int
         :param expected: list
         """
-        result = brute_force.main.sieve_of_eratosthenes(num)
+        result = algos.brute_force.main.sieve_of_eratosthenes(num)
         self.assertEqual(result, expected)
 
 

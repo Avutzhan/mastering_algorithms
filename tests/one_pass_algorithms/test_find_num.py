@@ -1,6 +1,6 @@
 import unittest
 from parameterized import parameterized
-from one_pass_algorithms.find_num import finder
+from algos.one_pass_algorithms.find_num import finder
 
 
 class TestFindNum(unittest.TestCase):

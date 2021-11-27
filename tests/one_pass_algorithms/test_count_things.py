@@ -1,6 +1,6 @@
 import unittest
 from parameterized import parameterized
-from one_pass_algorithms.count_things import count_nums
+from algos.one_pass_algorithms.count_things import count_nums
 
 
 class TestCountNums(unittest.TestCase):

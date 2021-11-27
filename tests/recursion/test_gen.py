@@ -1,5 +1,4 @@
 import unittest
-import recursion.gen
 from parameterized import parameterized
 
 
@@ -15,7 +14,7 @@ class TestGen(unittest.TestCase):
         :param n: int
         :param expected: list
         """
-        gen = recursion.gen.Gen()
+        gen = algos.recursion.gen.Gen()
         gen.clear_data()
         result = gen.gen_bin_recursive(n)
         self.assertEqual(result, expected)
@@ -35,7 +34,7 @@ class TestGen(unittest.TestCase):
         :param n: int
         :param expected: list
         """
-        gen = recursion.gen.Gen()
+        gen = algos.recursion.gen.Gen()
         gen.clear_data()
         result = gen.gen_bin_iterative(n)
         self.assertEqual(result, expected)
@@ -54,7 +53,7 @@ class TestGen(unittest.TestCase):
         :param m: int
         :param expected: list
         """
-        gen = recursion.gen.Gen()
+        gen = algos.recursion.gen.Gen()
         gen.clear_data()
         result = gen.generate_numbers(n, m)
         self.assertEqual(result, expected)
@@ -69,7 +68,7 @@ class TestGen(unittest.TestCase):
         :param n: int
         :param expected: list
         """
-        gen = recursion.gen.Gen()
+        gen = algos.recursion.gen.Gen()
         gen.clear_data()
         result = gen.generate_permutations(n)
         self.assertEqual(result, expected)

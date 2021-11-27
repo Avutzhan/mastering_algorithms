@@ -1,6 +1,6 @@
 import unittest
 from parameterized import parameterized
-from one_pass_algorithms.find_max import maximum, minimum
+from algos.one_pass_algorithms.find_max import maximum, minimum
 
 
 class TestFindMax(unittest.TestCase):

@@ -1,5 +1,5 @@
 import unittest
-import dynamic_programming.main
+import algos.dynamic_programming.main
 from parameterized import parameterized
 
 
@@ -16,7 +16,7 @@ class TestDynamic(unittest.TestCase):
         :param n: int
         :param expected: int
         """
-        result = dynamic_programming.main.fib(n)
+        result = algos.dynamic_programming.main.fib(n)
         self.assertEqual(result, expected)
 
     @parameterized.expand([
@@ -30,7 +30,7 @@ class TestDynamic(unittest.TestCase):
         :param n: int
         :param expected: int
         """
-        result = dynamic_programming.main.dynamic_fib(n)
+        result = algos.dynamic_programming.main.dynamic_fib(n)
         self.assertEqual(result, expected)
 
     @parameterized.expand([
@@ -44,7 +44,7 @@ class TestDynamic(unittest.TestCase):
         :param n: int
         :param expected: int
         """
-        result = dynamic_programming.main.trajectories_num(n)
+        result = algos.dynamic_programming.main.trajectories_num(n)
         self.assertEqual(result, expected)
 
     @parameterized.expand([
@@ -59,7 +59,7 @@ class TestDynamic(unittest.TestCase):
         :param n: int
         :param expected: int
         """
-        result = dynamic_programming.main.count_trajectories(n, allowed)
+        result = algos.dynamic_programming.main.count_trajectories(n, allowed)
         self.assertEqual(result, expected)
 
     @parameterized.expand([
@@ -74,7 +74,7 @@ class TestDynamic(unittest.TestCase):
         :param n: int
         :param expected: int
         """
-        result = dynamic_programming.main.count_min_cost(n, allowed)
+        result = algos.dynamic_programming.main.count_min_cost(n, allowed)
         self.assertEqual(result, expected)
 
     @parameterized.expand([
@@ -88,7 +88,7 @@ class TestDynamic(unittest.TestCase):
         :param A: List[List[int]]
         :param expected: List[int]
         """
-        result = dynamic_programming.main.linearize_array(A)
+        result = algos.dynamic_programming.main.linearize_array(A)
         self.assertEqual(result, expected)
 
     @parameterized.expand([
@@ -103,7 +103,7 @@ class TestDynamic(unittest.TestCase):
         :param N: list
         :param expected: list
         """
-        result = dynamic_programming.main.wrong_list_of_lists(M, N)
+        result = algos.dynamic_programming.main.wrong_list_of_lists(M, N)
         self.assertEqual(result, expected)
 
     @parameterized.expand([
@@ -118,7 +118,7 @@ class TestDynamic(unittest.TestCase):
         :param N: list
         :param expected: bool
         """
-        A = dynamic_programming.main.wrong_list_of_lists(M, N)
+        A = algos.dynamic_programming.main.wrong_list_of_lists(M, N)
         result = A[0] is A[1]
         self.assertEqual(result, expected)
 
@@ -134,7 +134,7 @@ class TestDynamic(unittest.TestCase):
         :param N: list
         :param expected: list
         """
-        result = dynamic_programming.main.best_list_of_lists(M, N)
+        result = algos.dynamic_programming.main.best_list_of_lists(M, N)
         self.assertEqual(result, expected)
 
     @parameterized.expand([
@@ -149,7 +149,7 @@ class TestDynamic(unittest.TestCase):
         :param N: list
         :param expected: bool
         """
-        A = dynamic_programming.main.best_list_of_lists(M, N)
+        A = algos.dynamic_programming.main.best_list_of_lists(M, N)
         result = A[0] is A[1]
         self.assertEqual(result, expected)
 
@@ -165,7 +165,7 @@ class TestDynamic(unittest.TestCase):
         :param M: int
         :param expected: int
         """
-        result = dynamic_programming.main.king_steps(N, M)
+        result = algos.dynamic_programming.main.king_steps(N, M)
         self.assertEqual(result, expected)
 
     @parameterized.expand([
@@ -180,7 +180,7 @@ class TestDynamic(unittest.TestCase):
         :param M: list
         :param expected: int
         """
-        result = dynamic_programming.main.longest_common_subsequence(N, M)
+        result = algos.dynamic_programming.main.longest_common_subsequence(N, M)
         self.assertEqual(result, expected)
 
     @parameterized.expand([
@@ -194,7 +194,7 @@ class TestDynamic(unittest.TestCase):
         :param A: list
         :param expected: int
         """
-        result = dynamic_programming.main.longest_increasing_subsequence(A)
+        result = algos.dynamic_programming.main.longest_increasing_subsequence(A)
         self.assertEqual(result, expected)
 
     @parameterized.expand([
@@ -209,7 +209,7 @@ class TestDynamic(unittest.TestCase):
         :param B: str
         :param expected: int
         """
-        result = dynamic_programming.main.levenshtein(A, B)
+        result = algos.dynamic_programming.main.levenshtein(A, B)
         self.assertEqual(result, expected)
 
     @parameterized.expand([
@@ -224,7 +224,7 @@ class TestDynamic(unittest.TestCase):
         :param B: str
         :param expected: bool
         """
-        result = dynamic_programming.main.check_strings(A, B)
+        result = algos.dynamic_programming.main.check_strings(A, B)
         self.assertEqual(result, expected)
 
     @parameterized.expand([
@@ -239,7 +239,7 @@ class TestDynamic(unittest.TestCase):
         :param sub: str
         :param expected: int
         """
-        result = dynamic_programming.main.search_substring(s, sub)
+        result = algos.dynamic_programming.main.search_substring(s, sub)
         self.assertEqual(result, expected)
 
     @parameterized.expand([
@@ -253,7 +253,7 @@ class TestDynamic(unittest.TestCase):
         :param s: str
         :param expected: list
         """
-        result = dynamic_programming.main.prefix(s)
+        result = algos.dynamic_programming.main.prefix(s)
         self.assertEqual(result, expected)
 
     @parameterized.expand([
@@ -268,7 +268,7 @@ class TestDynamic(unittest.TestCase):
         :param sub: str
         :param expected: list
         """
-        result = dynamic_programming.main.kmp(sub, s)
+        result = algos.dynamic_programming.main.kmp(sub, s)
         self.assertEqual(result, expected)
 
 

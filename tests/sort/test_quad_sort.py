@@ -1,5 +1,4 @@
 import unittest
-import sort.quad
 from parameterized import parameterized
 
 
@@ -16,7 +15,7 @@ class TestQuadSort(unittest.TestCase):
         :param data: list
         :param expected: list
         """
-        result = sort.quad.insert_sort(data)
+        result = algos.sort.quad.insert_sort(data)
         self.assertEqual(result, expected)
 
     @parameterized.expand([
@@ -30,7 +29,7 @@ class TestQuadSort(unittest.TestCase):
         :param data: list
         :param expected: list
         """
-        result = sort.quad.selection_sort(data)
+        result = algos.sort.quad.selection_sort(data)
         self.assertEqual(result, expected)
 
     @parameterized.expand([
@@ -44,7 +43,7 @@ class TestQuadSort(unittest.TestCase):
         :param data: list
         :param expected: list
         """
-        result = sort.quad.bubble_sort(data)
+        result = algos.sort.quad.bubble_sort(data)
         self.assertEqual(result, expected)
 
 

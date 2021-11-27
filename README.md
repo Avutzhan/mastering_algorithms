@@ -62,5 +62,19 @@
         - [x] search substring in string
         - [x] prefix
         - [x] kmp
-        
-лекция 12
+       
+# Data Structures realizations by Categories
+
+1. Stack LIFO (Last in First out) 1 2 3 4 [1, 2, 3, 4] 4 3 2 1
+    - [x] push 
+    - [x] pop 
+    - [x] peek 
+    - [x] size 
+    - [x] is_empty 
+2. Queue FIFO (First in First out) 1 2 3 4 [1, 2, 3, 4] 1 2 3 4
+    - [x] enqueue 
+    - [x] dequeue
+    - [x] head
+    - [x] tail
+ 
+лекция 13

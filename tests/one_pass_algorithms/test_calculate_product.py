@@ -1,6 +1,6 @@
 import unittest
 from parameterized import parameterized
-from one_pass_algorithms.calculate_product import product
+from algos.one_pass_algorithms.calculate_product import product
 
 
 class TestCalculateProduct(unittest.TestCase):

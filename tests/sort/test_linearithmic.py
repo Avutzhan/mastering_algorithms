@@ -1,5 +1,4 @@
 import unittest
-import sort.linearithmic
 from parameterized import parameterized
 
 
@@ -17,7 +16,7 @@ class TestLinearithmicSort(unittest.TestCase):
         :param b: list
         :param expected: list
         """
-        result = sort.linearithmic.merge(a, b)
+        result = algos.sort.linearithmic.merge(a, b)
         self.assertEqual(result, expected)
 
     @parameterized.expand([
@@ -31,7 +30,7 @@ class TestLinearithmicSort(unittest.TestCase):
         :param a: list
         :param expected: list
         """
-        sort.linearithmic.merge_sort(a)
+        algos.sort.linearithmic.merge_sort(a)
         self.assertEqual(a, expected)
 
     @parameterized.expand([
@@ -45,7 +44,7 @@ class TestLinearithmicSort(unittest.TestCase):
         :param a: list
         :param expected: list
         """
-        sort.linearithmic.quick_sort(a)
+        algos.sort.linearithmic.quick_sort(a)
         self.assertEqual(a, expected)
 
 

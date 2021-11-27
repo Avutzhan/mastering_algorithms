@@ -1,5 +1,4 @@
 import unittest
-import recursion.main
 from parameterized import parameterized
 
 
@@ -15,7 +14,7 @@ class TestRecursion(unittest.TestCase):
         :param data: int
         :param expected: int
         """
-        result = recursion.main.factorial(data)
+        result = algos.recursion.main.factorial(data)
         self.assertEqual(result, expected)
 
     @parameterized.expand([
@@ -30,7 +29,7 @@ class TestRecursion(unittest.TestCase):
         :param b: int
         :param expected: int
         """
-        result = recursion.main.gcd(a, b)
+        result = algos.recursion.main.gcd(a, b)
         self.assertEqual(result, expected)
 
     @parameterized.expand([
@@ -45,7 +44,7 @@ class TestRecursion(unittest.TestCase):
         :param b: int
         :param expected: int
         """
-        result = recursion.main.gcd_better(a, b)
+        result = algos.recursion.main.gcd_better(a, b)
         self.assertEqual(result, expected)
 
     @parameterized.expand([
@@ -60,7 +59,7 @@ class TestRecursion(unittest.TestCase):
         :param b: int
         :param expected: int
         """
-        result = recursion.main.gcd_one_liner(a, b)
+        result = algos.recursion.main.gcd_one_liner(a, b)
         self.assertEqual(result, expected)
 
     @parameterized.expand([
@@ -75,7 +74,7 @@ class TestRecursion(unittest.TestCase):
         :param b: int
         :param expected: int
         """
-        result = recursion.main.power(a, b)
+        result = algos.recursion.main.power(a, b)
         self.assertEqual(result, expected)
 
     @parameterized.expand([
@@ -90,7 +89,7 @@ class TestRecursion(unittest.TestCase):
         :param b: int
         :param expected: int
         """
-        result = recursion.main.power_better(a, b)
+        result = algos.recursion.main.power_better(a, b)
         self.assertEqual(result, expected)
 
     @parameterized.expand([
@@ -106,7 +105,7 @@ class TestRecursion(unittest.TestCase):
         :param c: str
         :param expected: int
         """
-        result = recursion.main.hanoi(n, a, b, c)
+        result = algos.recursion.main.hanoi(n, a, b, c)
         self.assertEqual(result, expected)
 
 
