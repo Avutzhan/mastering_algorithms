@@ -1,4 +1,5 @@
 import unittest
+import algos.sort.quad
 from parameterized import parameterized
 
 

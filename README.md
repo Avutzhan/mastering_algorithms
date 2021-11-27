@@ -1,4 +1,4 @@
-# Algorithms realizations by Categories
+# Algorithms realizations by Categories in Python 3
 
 1. One Pass Algorithms
     - [x] count_nums
@@ -63,7 +63,7 @@
         - [x] prefix
         - [x] kmp
        
-# Data Structures realizations by Categories
+# Data Structures realizations by Categories in Python 3
 
 1. Stack LIFO (Last in First out) 1 2 3 4 [1, 2, 3, 4] 4 3 2 1
     - [x] push 

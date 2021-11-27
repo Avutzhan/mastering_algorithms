@@ -1,6 +1,6 @@
 import unittest
 
-from algos.one_pass_algorithms import simple_sum, simple_sum_short
+from algos.one_pass_algorithms.sum_things import simple_sum, simple_sum_short
 
 
 class TestSumThings(unittest.TestCase):

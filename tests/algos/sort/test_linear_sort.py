@@ -1,4 +1,5 @@
 import unittest
+import algos.sort.linear
 from parameterized import parameterized
 
 
