@@ -71,6 +71,9 @@
     - [x] peek 
     - [x] size 
     - [x] is_empty 
+    - [x] A_stack 
+    - [x] B_stack 
+    - [x] check_braces_sequence
 2. Queue FIFO (First in First out) 1 2 3 4 [1, 2, 3, 4] 1 2 3 4
     - [x] enqueue 
     - [x] dequeue
