@@ -1,6 +1,6 @@
 # Algorithms realizations by Categories in Python 3
 
-[Easy Arrays List](https://github.com/Avutzhan/mastering_algorithms/docs/easy/arrays.md) 
+[Easy Arrays List](https://github.com/Avutzhan/mastering_algorithms/blob/main/docs/easy/arrays.md) 
 
 1. One Pass Algorithms
     - [x] count_nums
