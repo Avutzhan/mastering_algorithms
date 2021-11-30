@@ -1,5 +1,7 @@
 # Algorithms realizations by Categories in Python 3
 
+[Easy Arrays List](https://github.com/Avutzhan/mastering_algorithms/docs/easy/arrays.md) 
+
 1. One Pass Algorithms
     - [x] count_nums
     - [x] simple_sum
@@ -74,6 +76,7 @@
     - [x] A_stack 
     - [x] B_stack 
     - [x] check_braces_sequence
+    - [x] reverse_polish_notation
 2. Queue FIFO (First in First out) 1 2 3 4 [1, 2, 3, 4] 1 2 3 4
     - [x] enqueue 
     - [x] dequeue
@@ -81,3 +84,19 @@
     - [x] tail
  
 лекция 13
+
+принципы алгоримизации
+1 формализация алгоритма
+машина поста
+машина тьюринга
+
+конечные автоматы мили
+
+способф записи алгоритмов
+словестный 
+блок схема
+псевдокоды
+программный
+диаграмма несси шнейдермана
+на доске как в фаанге
+
