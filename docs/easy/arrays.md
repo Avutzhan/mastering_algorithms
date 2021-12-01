@@ -6,3 +6,4 @@ Easy Array Problems List
 2) [Find Numbers with Even Number of Digits](https://leetcode.com/problems/find-numbers-with-even-number-of-digits/) 
 3) [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/) 
 4) [Duplicate Zeros](https://leetcode.com/problems/duplicate-zeros/) 
+5) [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) 
