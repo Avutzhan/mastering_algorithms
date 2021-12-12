@@ -16,6 +16,7 @@ Inserting items into Arrays. Arrays Operations
 5) [Duplicate Zeros](https://leetcode.com/problems/duplicate-zeros/)
     * Python 3, Go   
 6) [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) 
+    * Python 3, Go  
 
 Deleting items. Two Pointers Technique
 
