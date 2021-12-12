@@ -21,7 +21,8 @@ Inserting items into Arrays. Arrays Operations
 Deleting items. Two Pointers Technique
 
 6) [Remove Element](https://leetcode.com/problems/remove-element/) 
-7) [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) 
+    * Python 3, Go  
+8) [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) 
 
 Searching for Items in an Array
 
