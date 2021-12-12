@@ -64,6 +64,10 @@
         - [x] search substring in string
         - [x] prefix
         - [x] kmp
+7. Two Pointers
+        - [x] Find pairs in array
+        - [x] Remove Element
+        - [x] Remove Duplicates from Sorted array
        
 # Data Structures realizations by Categories in Python 3
 
