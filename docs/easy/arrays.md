@@ -5,8 +5,11 @@ Easy Array Problems List
 Array introduction. Reading Arrays Items. Counting/Sorting/Changing Something in Array.
 
 1) [Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/) 
-2) [Find Numbers with Even Number of Digits](https://leetcode.com/problems/find-numbers-with-even-number-of-digits/) 
-3) [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/) 
+    * C++, Java, Python, Python 3, C, C#, JS, Ruby, Swift, Go, Scala, Kotlin, Rust, PHP, TS, Racket
+3) [Find Numbers with Even Number of Digits](https://leetcode.com/problems/find-numbers-with-even-number-of-digits/)
+4)  * Python 3, Go 
+5) [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/) 
+    * Python 3, Go
 
 Inserting items into Arrays. Arrays Operations
 
