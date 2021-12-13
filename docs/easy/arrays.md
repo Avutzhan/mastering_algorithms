@@ -28,7 +28,8 @@ Deleting items. Two Pointers Technique
 Searching for Items in an Array
 
 8) [Check If N and Its Double Exist](https://leetcode.com/problems/check-if-n-and-its-double-exist/) 
-9) [Valid Mountain Array](https://leetcode.com/problems/valid-mountain-array/) 
+    * Python 3, Go 
+10) [Valid Mountain Array](https://leetcode.com/problems/valid-mountain-array/) 
 
 In-place operations
 
