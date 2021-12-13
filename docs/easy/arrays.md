@@ -30,7 +30,7 @@ Searching for Items in an Array
 8) [Check If N and Its Double Exist](https://leetcode.com/problems/check-if-n-and-its-double-exist/) 
     * Python 3, Go 
 10) [Valid Mountain Array](https://leetcode.com/problems/valid-mountain-array/) 
-
+    * Python 3, Go 
 In-place operations
 
 10) [Replace Elements with Greatest Element on Right Side](https://leetcode.com/problems/replace-elements-with-greatest-element-on-right-side/) 
