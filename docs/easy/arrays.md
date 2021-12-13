@@ -23,6 +23,7 @@ Deleting items. Two Pointers Technique
 6) [Remove Element](https://leetcode.com/problems/remove-element/) 
     * Python 3, Go  
 8) [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) 
+    * Python 3, Go 
 
 Searching for Items in an Array
 
